@@ -14,22 +14,31 @@ class User{
         return this.pets.length;
     }
 
+    getBookNames(){
+        return this.books.map(book => book.name);
+    }
+
     addBook(book){
         this.books.push(book);
     }
 
-    getBookNames(){
-        return this.books.map(book => book.name);
+    addPets(pet){
+        this.pets.push(pet);
     }
 }
 
-fred = new User('Fred', 'Miramontes', [{name: "The Hobbit and the Lord of the Rings", author:"J R R Tolkien"},{name: "Harry Potter and the Sorcerer’s Stone ", author:"J.K. Rowling"}], [{name: "Lucky", type: "cat"},{name: "Bella", type: "dog"}]);
+const fred = new User('Fred', 'Miramontes', [], []);
 
-//using countPets()
-console.log(`total of pets: ${fred.countPets()}`);
-
-//using getBooksNames()
+console.log(fred.getBookNames());
+fred.addBook({name: "The Hobbit and the Lord of the Rings", author:"J R R Tolkien"});
+console.log(fred.getBookNames());
+fred.addBook({name: "Harry Potter and the Sorcerer’s Stone ", author:"J.K. Rowling"});
 console.log(fred.getBookNames());
 
-//using getFullName()
+console.log(`total of pets: ${fred.countPets()}`);
+fred.addPets({name: "Lucky", type: "cat"});
+console.log(`total of pets: ${fred.countPets()}`);
+fred.addPets({name: "Bella", type: "dog"});
+console.log(`total of pets: ${fred.countPets()}`);
+
 console.log(fred.getFullName());

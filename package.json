@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon apps.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sh4rkd/corderhouse-BackEnd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sh4rkd/corderhouse-BackEnd/issues"
+  },
+  "homepage": "https://github.com/sh4rkd/corderhouse-BackEnd#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

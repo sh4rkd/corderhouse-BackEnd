@@ -4,11 +4,13 @@ const products = require('./products.json');
 
 class Content{
 
-  getProduct() {
-    return {title:this.title, price:this.price, thumbnail:this.thumbnail, id:this.id};
-  }
-
-  create(product) {
+  create(title, price, thumbnail) {
+    const product = {
+      title,
+      price,
+      thumbnail,
+      id: products.length + 1
+    };
       products.push(product);
       fs.writeFileSync('./products.json', JSON.stringify(products));
   }
@@ -26,12 +28,12 @@ class Content{
     products.splice(id, 1);
     fs.writeFileSync('./products.json', JSON.stringify(products));
   }
+
+  readRandom() {
+    const random = Math.floor(Math.random() * products.length);
+    return products[random];
+  }
 }
 
-module.exports = {
-    Content
-}
-
-console.log(new Content().read());
-
+module.exports = new Content();
 

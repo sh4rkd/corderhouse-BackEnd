@@ -5,9 +5,9 @@ const content = require('./products.js');
 
 app.get('/', (req, res) => {
     res.send(`
-        <a href="/productos">ver todos los productos</a>
+        <a href="/productos" target="_blank">ver todos los productos</a>
         <br/>
-        <a href="/productoRandom">ver un producto aleatorio</a>
+        <a href="/productoRandom" target="_blank">ver un producto aleatorio</a>
     `);
 });
 

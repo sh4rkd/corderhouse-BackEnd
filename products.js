@@ -30,8 +30,7 @@ class Content{
   }
 
   readRandom() {
-    const random = Math.floor(Math.random() * products.length);
-    return products[random];
+    return products[Math.floor(Math.random() * products.length)];
   }
 }
 

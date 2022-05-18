@@ -20,17 +20,40 @@ class Content{
   }
 
   update(id, product) {
-    products[id] = product;
-    fs.writeFileSync('./products.json', JSON.stringify(products));
+    if(this.exist(id)) {
+      product["id"] = id;
+      products[this.returnPositionById(id)] = product;
+      fs.writeFileSync('./products.json', JSON.stringify(products));
+      return true;
+    }else{
+      return false;
+    }
   }
 
   deleteProduct(id) {
-    products.splice(id, 1);
-    fs.writeFileSync('./products.json', JSON.stringify(products));
+    if(this.exist(id)) {
+      products.splice(this.returnPositionById(id), 1);
+      fs.writeFileSync('./products.json', JSON.stringify(products));
+      return true;
+    }else{
+      return false;
+    }
   }
 
   readRandom() {
     return products[Math.floor(Math.random() * products.length)];
+  }
+
+  readById(id) {
+    return this.exist(id) ? products.filter(product => product.id === id) : null;
+  }
+
+  returnPositionById(id) {
+    return products.findIndex(product => product.id === id);
+  }
+
+  exist(id) {
+    return products.some(product => product.id === id);
   }
 }
 

@@ -1,24 +1,17 @@
 {
-  "name": "backend",
+  "name": "entregable",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon apps.js"
+    "start": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sh4rkd/corderhouse-BackEnd.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sh4rkd/corderhouse-BackEnd/issues"
-  },
-  "homepage": "https://github.com/sh4rkd/corderhouse-BackEnd#readme",
   "dependencies": {
-    "express": "^4.18.1"
-  }
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "nodemon": "^2.0.7"
+  },
+  "description": ""
 }

@@ -1,0 +1,20 @@
+extends layoutVerProductos 
+block datosProductos
+    h1 Productos Cargados
+    if productos.length != 0
+        table
+            tr
+                th Title 
+                th Price
+                th Thumbnail
+
+            each producto in productos
+                tr
+                    td #{producto.title}</td>
+                    td $#{producto.price}</td>
+                    td 
+                        img(src=producto.thumbnail style="max-width:50px")
+    else
+        p No se encontraron productos
+    a(href="/") 
+        button Cargar productos

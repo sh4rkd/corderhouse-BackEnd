@@ -1,0 +1,38 @@
+[
+	{
+		"name": "HP Laptop 15-dy2050la",
+		"description": "Haz grandes cosas con confianza y la sensación de un entorno familiar como Windows, solo que mejor. Siéntete más seguro, sé más productivo y más personalizado con funciones y mejoras instaladas previamente como Windows Hello y Cortana.",
+		"stock": 58,
+		"price": 40,
+		"thumbnailURL": "https://m.media-amazon.com/images/I/71eF4KwAlGL._AC_SX679_.jpg",
+		"id": "1",
+		"timestamp": 1654653190000
+	},
+	{
+		"name": "Apple iPhone 11",
+		"description": "Sistema de dos cámaras de 12 MP: ultra gran angular y gran angular; con modo Noche, modo Retrato y video 4K de hasta 60 cps",
+		"stock": 123,
+		"price": 20,
+		"thumbnailURL": "https://m.media-amazon.com/images/I/71Z8C1zRgAL._AC_SX466_.jpg",
+		"id": "2",
+		"timestamp": 1654653430000
+	},
+	{
+		"name": "HUAWEI MateBook D 14",
+		"description": "HUAWEI MateBook D 14, Hermosa en todos los sentidos. HUAWEI MateBook D 14 está equipada con una extraordinaria pantalla IPS de 1920 x 1080 y los biseles se han reducido a solo 4.8 mm, lo que hace que la pantalla FullView de 14 pulgadas parezca casi infinita. Con su ángulo de visión de 178°, ya sea que te sumerjas en una experiencia cinematográfica o simplemente envíes un correo electrónico, te espera un placer visual con una pantalla vívida y hermosa.",
+		"stock": 40,
+		"price": 200,
+		"thumbnailURL": "https://m.media-amazon.com/images/I/71miAQRkUpS._AC_SY450_.jpg",
+		"id": "3",
+		"timestamp": 1654653490000
+	},
+	{
+		"name": "RESPAWN-110 Racing Style Gaming Chair",
+		"description": "una silla de juego de estilo deportivo que brinda lujo y comodidad, ya sea que se use para sesiones de juego intensas y para subir a la cima de las tablas de clasificación, o largos días de trabajo",
+		"stock": 40,
+		"price": 200,
+		"thumbnailURL": "https://m.media-amazon.com/images/I/71qYGd8XJ7L._SX466_.jpg",
+		"id": "4",
+		"timestamp": 1654653550000
+	}
+]

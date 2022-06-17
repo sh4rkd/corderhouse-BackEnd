@@ -1,0 +1,31 @@
+h1 {
+  color: blue;
+}
+
+label {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.jumbotron {
+  min-height: 100vh;
+}
+.imagenes {
+  max-width: 70px;
+}
+.hora {
+  color: brown;
+}
+.italica {
+  font-style: italic;
+}
+.bolder {
+  font-weight: 800;
+}
+.form {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
